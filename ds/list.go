@@ -4,15 +4,30 @@ import "fmt"
 
 type Node struct {
 	number int
-	next *int
+	next *Node
 }
 
 func List() string {
-	node := Node{
+	
+	var list *Node
+	n :=  &Node{
 		number: 1,
 		next: nil,
 	}
 
-	return fmt.Sprintf("%d", node.number)
+	list = n
+
+	n = &Node{
+		number: 5,
+		next: nil,
+	}
+	list.next = n
+
+	for temp := list; temp != nil; temp = temp.next {
+		fmt.Println(temp.number)
+	}
+
+	return ""
+
 
 }
