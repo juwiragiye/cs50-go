@@ -3,9 +3,9 @@ package main
 import (
 	"fmt"
 
-	"github.com/juwiragiye/cs50-go/memory"
+	"github.com/juwiragiye/cs50-go/ds"
 )
 
 func main() {
-	fmt.Printf("Address: %v\n", memory.Address())
+	fmt.Println(ds.List())
 }
