@@ -7,5 +7,5 @@ import (
 )
 
 func main() {
-	fmt.Println(memory.Hello())
+	fmt.Printf("Address: %v\n", memory.Address())
 }
